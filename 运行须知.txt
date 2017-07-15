@@ -1,0 +1,12 @@
+﻿python 3.4 or 2.7 + django 1.7.4
+运行环境为Python2.7.12 +django1.11.2
+
+需要先安装pillow：pip install pillow
+
+ckeditor需要自行下载，对应目录js/ckeditor
+
+直接运行python manage.py runserver
+
+后台入口 http://127.0.0.1:8008/cms_app/admin/index
+
+后台用户密码都是zlq
