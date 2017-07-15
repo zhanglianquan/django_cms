@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="Django_cms_server">
+    <serverData>
+      <paths name="Django_cms_server">
+        <serverdata>
+          <mappings>
+            <mapping deploy="myjsProj" local="$PROJECT_DIR$" web="myjsProj" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

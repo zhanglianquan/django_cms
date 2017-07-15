@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{{ web_name }} - 后台管理</title>
+    {% load staticfiles %}
+    <link rel="shortcut icon" href="{%static "images/favicon.ico"  %}" />
+    <link type="text/css" rel="stylesheet" href="../../static/css/admin_css.css">
+    <script src="{{ jquery }}"> </script>
+    <script src="../../static/js/admin.js"></script>
+    <script src="../../static/js/jquery.pagination.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <!--上面的菜单-->
+            <ul id="top-navigation">
+            </ul>
+        </div>
+        <div id="middle">
+            <!--参数-->
+            {% csrf_token %}
+            <input type="hidden" id="menu_param" />
+            <!--左边菜单-->
+            <div id="left-column">
+            </div>
+            <div id="center-column">
+                <!--内容部分-->
+            </div>
+            <div id="right-column">
+                <strong class="h">当前用户</strong>
+                <div class="box">
+                    <div>用户名:{{ request.session.my_sess_admin.name }}</div>
+                    <div><a href="#" id="logout"><b>退出登录</b></a></div>
+                </div>
+            </div>
+            <div id="right-column">
+                <strong class="h">系统信息</strong>
+                <div class="box">
+                    <div>System:{{ res_data.system }}</div>
+                    <div>Python:{{ res_data.python_version }}</div>
+                    <div>Django:{{ res_data.django_version }}</div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
