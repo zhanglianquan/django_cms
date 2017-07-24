@@ -83,6 +83,22 @@ admin_menu_list = [
                     },
                 ]
             },
+            {
+                "id": 5,
+                "name": "瀑布流",
+                "child_menu": [
+                    {
+                        "id": 10,
+                        "name": "JS实现的瀑布流",
+                        "url": "js_waterfall.html",
+                    },
+                    {
+                        "id": 11,
+                        "name": "Django框架实现的瀑布流",
+                        "url": "django_waterfall.html",
+                    },
+                ]
+            },
         ]
     },
 ]
